@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Olusola Owolabi — Monitoring, Evaluation & Learning Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6F1;
+    --ink:#1E2B22;
+    --ink-soft:#4B5750;
+    --line:#D9D8CC;
+    --green:#2F5233;
+    --green-deep:#1E3722;
+    --coral:#D9663F;
+    --coral-soft:#F3DED4;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--green-deep);}
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  header.hero{
+    padding:72px 0 40px;
+    border-bottom:1px solid var(--line);
+  }
+  .kicker{
+    font-size:14px;
+    color:var(--coral);
+    font-weight:500;
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:44px;
+    line-height:1.08;
+    margin:0 0 12px;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    font-size:19px;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+    max-width:56ch;
+  }
+  .contact-row{
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .contact-row span, .contact-row a{
+    display:inline-block;
+    margin:0 22px 6px 0;
+  }
+  .contact-row a{text-decoration:none; border-bottom:1px solid var(--line);}
+  .contact-row a:hover{border-color:var(--green);}
+
+  .stats{
+    display:flex;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin:36px 0 0;
+  }
+  .stat{
+    flex:1;
+    background:var(--paper);
+    padding:20px 18px;
+    border-right:1px solid var(--line);
+  }
+  .stat:last-child{border-right:none;}
+  .stat .num{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:28px;
+    color:var(--green-deep);
+    display:block;
+  }
+  .stat .label{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:4px;
+  }
+
+  section{padding:52px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:24px;
+    margin:0 0 8px;
+  }
+  .section-intro{
+    color:var(--ink-soft);
+    font-size:15px;
+    margin:0 0 30px;
+    max-width:58ch;
+  }
+
+  .case{
+    display:flex;
+    gap:24px;
+    padding:26px 0;
+    border-top:1px solid var(--line);
+  }
+  .case:first-of-type{border-top:none;}
+  .case-visual{
+    flex:0 0 180px;
+    width:180px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px;
+  }
+  .case-body{flex:1; min-width:0;}
+  .case-body h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 6px;
+    color:var(--green-deep);
+  }
+  .case-body .tag{
+    display:inline-block;
+    font-size:12px;
+    color:var(--coral);
+    font-weight:500;
+    margin-bottom:10px;
+  }
+  .case-body p{
+    margin:0 0 8px;
+    font-size:15px;
+    color:var(--ink);
+  }
+  .case-body p.outcome{
+    color:var(--ink-soft);
+  }
+  .case-body p strong{color:var(--green-deep); font-weight:600;}
+
+  .timeline{border-top:1px solid var(--line);}
+  .tl-item{
+    display:flex;
+    gap:20px;
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .tl-item:last-child{border-bottom:none;}
+  .tl-item > div:last-child{flex:1; min-width:0;}
+  .tl-year{
+    flex:0 0 110px;
+    width:110px;
+    font-size:14px;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+  .tl-role{font-weight:600; font-size:16px; margin:0 0 2px;}
+  .tl-org{font-size:14px; color:var(--ink-soft); margin:0 0 8px;}
+  .tl-item ul{margin:0; padding-left:18px; font-size:14.5px;}
+  .tl-item li{margin-bottom:4px;}
+
+  .skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:26px 40px;
+  }
+  .skills-grid > div{flex:1 1 260px;}
+  .skills-grid h4{
+    font-size:13px;
+    text-transform:none;
+    color:var(--coral);
+    font-weight:600;
+    margin:0 0 10px;
+  }
+  .skills-grid p{margin:0; font-size:14.5px; color:var(--ink-soft); line-height:1.8;}
+
+  .edu-item{margin-bottom:14px;}
+  .edu-item .deg{font-weight:600; font-size:15.5px;}
+  .edu-item .inst{color:var(--ink-soft); font-size:14.5px;}
+
+  footer{
+    padding:52px 0 72px;
+    text-align:left;
+  }
+  footer h2{margin-bottom:14px;}
+  .cta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:22px;
+  }
+  .btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:4px;
+    font-size:14.5px;
+    font-weight:500;
+    text-decoration:none;
+    border:1px solid var(--green-deep);
+  }
+  .btn.primary{background:var(--green-deep); color:#fff;}
+  .btn.secondary{color:var(--green-deep); border-color:var(--line);}
+
+  @media print{
+    body{font-size:13px;}
+    .wrap{max-width:100%; padding:0 34px;}
+    header.hero{padding:30px 0 22px;}
+    h1{font-size:32px;}
+    .role{font-size:15px; margin-bottom:16px;}
+    .stats{margin-top:20px;}
+    .stat{padding:12px 14px;}
+    .stat .num{font-size:20px;}
+    .stat .label{font-size:11.5px;}
+    section{padding:24px 0;}
+    h2{font-size:19px;}
+    .section-intro{font-size:12.5px; margin-bottom:16px;}
+    .case{padding:14px 0; page-break-inside:avoid;}
+    .case-visual{flex:0 0 110px; width:110px; padding:8px;}
+    .case-visual svg{width:100px; height:64px;}
+    .case-body h3{font-size:15px;}
+    .case-body p{font-size:12px; margin-bottom:5px;}
+    .tl-item{padding:12px 0; page-break-inside:avoid;}
+    .tl-item ul{font-size:12px;}
+    .skills-grid{gap:12px 30px;}
+    .skills-grid p{font-size:12px;}
+    .edu-item{margin-bottom:8px;}
+    footer{padding:24px 0 30px;}
+    .btn{display:none;}
+  }
+  @media (max-width:600px){
+    h1{font-size:32px;}
+    .stats{flex-direction:column;}
+    .stat{border-right:none; border-bottom:1px solid var(--line);}
+    .stat:last-child{border-bottom:none;}
+    .case{flex-direction:column;}
+    .case-visual{width:140px;}
+    .tl-item{flex-direction:column; gap:6px;}
+    .tl-year{width:auto;}
+    header.hero{padding:48px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">Open to remote roles</p>
+    <h1>Olusola Owolabi</h1>
+    <p class="role">Monitoring, Evaluation &amp; Learning specialist focused on RMNCAH+N and health systems data — and the person who ends up building the tools the data runs on.</p>
+    <div class="contact-row">
+      <span>Lagos, Nigeria</span>
+      <a href="mailto:olusolaowolabir@gmail.com">olusolaowolabir@gmail.com</a>
+      <a href="tel:+2348129933903">+234 812 993 3903</a>
+      <a href="https://www.linkedin.com/in/olusolaowolabi" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="num">8+</span><span class="label">Years in M&amp;E &amp; public health</span></div>
+      <div class="stat"><span class="num">3</span><span class="label">Programs led as Team Lead or Consultant</span></div>
+      <div class="stat"><span class="num">2</span><span class="label">Automation systems built &amp; adopted directorate-wide</span></div>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <p class="section-intro">A mix of program monitoring and the reporting systems built to support it — all delivered for the Lagos State Ministry of Health, Directorate of Family Health &amp; Nutrition.</p>
+
+    <div class="case">
+      <div class="case-visual">
+        <svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="132" height="82" fill="none" stroke="#D9D8CC" stroke-width="1"/>
+          <line x1="4" y1="70" x2="136" y2="70" stroke="#4B5750" stroke-width="1"/>
+          <rect x="16" y="46" width="14" height="24" fill="#F3DED4"/>
+          <rect x="38" y="34" width="14" height="36" fill="#2F5233"/>
+          <rect x="60" y="52" width="14" height="18" fill="#F3DED4"/>
+          <rect x="82" y="22" width="14" height="48" fill="#2F5233"/>
+          <rect x="104" y="40" width="14" height="30" fill="#F3DED4"/>
+          <polyline points="16,58 38,44 60,60 82,30 104,48" fill="none" stroke="#D9663F" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="case-body">
+        <p class="tag">Reporting system</p>
+        <h3>Annual memo-tracking system</h3>
+        <p>Directorate memos were tracked manually with no visibility into turnaround times or bottlenecks. <strong>Rebuilt the annual tracking workbook</strong> in Excel with dynamic summaries, KPI dashboards, and calculated turnaround-time columns.</p>
+        <p class="outcome">Now the directorate's standard system for the year, giving supervisors a live view of where memos stand rather than a static log.</p>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-visual">
+        <svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="132" height="82" fill="none" stroke="#D9D8CC" stroke-width="1"/>
+          <rect x="14" y="14" width="112" height="14" fill="#2F5233"/>
+          <rect x="14" y="34" width="88" height="10" fill="#F3DED4"/>
+          <rect x="14" y="50" width="60" height="10" fill="#F3DED4"/>
+          <rect x="14" y="66" width="100" height="10" fill="#F3DED4"/>
+          <circle cx="118" cy="55" r="6" fill="none" stroke="#D9663F" stroke-width="1.5"/>
+          <path d="M118 51v4l3 2" stroke="#D9663F" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="case-body">
+        <p class="tag">Workflow automation</p>
+        <h3>Intern rotation scheduler</h3>
+        <p>Rotation planning across five DFHN divisions (RH, YAH, Child Health, Nutrition, M&amp;E) was a recurring manual exercise. <strong>Built a fully automated Excel system in Python (openpyxl)</strong> that handles weighted division assignments, a live daily briefing, data validation dropdowns, and a 40-row buffer for future interns.</p>
+        <p class="outcome">Removed the manual reshuffling that used to happen every rotation cycle.</p>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-visual">
+        <svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="90" height="60" fill="none" stroke="#D9D8CC" stroke-width="1"/>
+          <rect x="22" y="22" width="90" height="60" fill="#FFFFFF" stroke="#2F5233" stroke-width="1.3"/>
+          <rect x="30" y="30" width="30" height="18" fill="#F3DED4"/>
+          <line x1="66" y1="32" x2="104" y2="32" stroke="#4B5750" stroke-width="1"/>
+          <line x1="66" y1="40" x2="96" y2="40" stroke="#D9D8CC" stroke-width="1"/>
+          <line x1="30" y1="58" x2="104" y2="58" stroke="#D9D8CC" stroke-width="1"/>
+          <line x1="30" y1="66" x2="88" y2="66" stroke="#D9D8CC" stroke-width="1"/>
+          <circle cx="98" cy="60" r="5" fill="#D9663F"/>
+        </svg>
+      </div>
+      <div class="case-body">
+        <p class="tag">Presentation design</p>
+        <h3>MNCHW Round 2 presentation rebuild</h3>
+        <p>A dense, text-heavy source deck for the Lagos State MNCH Week Round 2 (2025) program needed to work for a state-level stakeholder audience. <strong>Condensed it into an 18-slide, infographic-led highlights deck</strong> using an automated slide-generation workflow, with a consistent forest-green and coral visual identity.</p>
+        <p class="outcome">Data quality issues in the source data were flagged rather than papered over — a suspect population figure was marked with a styled placeholder instead of being reproduced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2021 – Present</div>
+        <div>
+          <p class="tl-role">Monitoring &amp; Evaluation Officer</p>
+          <p class="tl-org">Lagos State Ministry of Health — Directorate of Family Health &amp; Nutrition</p>
+          <ul>
+            <li>Analyze RMNCAH+N and DHIS2 performance data to guide program implementation and policy review.</li>
+            <li>Provide technical and field leadership for research and surveys, supervising data collection teams.</li>
+            <li>Team Lead on LARCHIS (2022) and LVASA-SRS (2024/2025); Consultant on the FP Supply-Side Baseline (2024/2025).</li>
+            <li>Design and deploy automation tools now used directorate-wide for scheduling and reporting.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018 – 2021</div>
+        <div>
+          <p class="tl-role">Public Health Officer</p>
+          <p class="tl-org">Lagos State Ministry of Health — Directorate of Occupational Health &amp; Safety</p>
+          <ul>
+            <li>Conducted workplace inspections and investigated occupational health complaints.</li>
+            <li>Analyzed field data to support worker safety and welfare initiatives.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h4>Data &amp; systems</h4>
+        <p>DHIS2 &middot; Excel (advanced — dashboards, data validation) &middot; Python (openpyxl) for workflow automation &middot; SPSS</p>
+      </div>
+      <div>
+        <h4>Digital data collection</h4>
+        <p>ODK &middot; ArcGIS Survey123 &middot; iForm &middot; RedRose</p>
+      </div>
+      <div>
+        <h4>M&amp;E practice</h4>
+        <p>Survey design &amp; field supervision &middot; data quality assurance &middot; evidence-to-policy translation &middot; budgeting &amp; AOPs</p>
+      </div>
+      <div>
+        <h4>Reporting &amp; visualization</h4>
+        <p>Program reporting &middot; KPI dashboards &middot; automated/template-driven presentation design</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <p class="deg">MSc Public Health (Merit)</p>
+      <p class="inst">University of Sunderland, UK</p>
+    </div>
+    <div class="edu-item">
+      <p class="deg">BSc Biochemistry (Second Class Upper)</p>
+      <p class="inst">Babcock University, Nigeria</p>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Let's talk</h2>
+    <p class="section-intro">Open to remote Monitoring &amp; Evaluation, research, and data systems roles with global health organizations.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:olusolaowolabir@gmail.com">Email me</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/olusolaowolabi" target="_blank" rel="noopener">View LinkedIn</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

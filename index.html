@@ -286,20 +286,19 @@
       <div class="case-visual">
         <svg width="140" height="90" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
           <rect x="4" y="4" width="132" height="82" fill="none" stroke="#D9D8CC" stroke-width="1"/>
-          <line x1="4" y1="70" x2="136" y2="70" stroke="#4B5750" stroke-width="1"/>
-          <rect x="16" y="46" width="14" height="24" fill="#F3DED4"/>
-          <rect x="38" y="34" width="14" height="36" fill="#2F5233"/>
-          <rect x="60" y="52" width="14" height="18" fill="#F3DED4"/>
-          <rect x="82" y="22" width="14" height="48" fill="#2F5233"/>
-          <rect x="104" y="40" width="14" height="30" fill="#F3DED4"/>
-          <polyline points="16,58 38,44 60,60 82,30 104,48" fill="none" stroke="#D9663F" stroke-width="1.5"/>
+          <line x1="20" y1="45" x2="120" y2="45" stroke="#4B5750" stroke-width="1"/>
+          <rect x="14" y="36" width="16" height="18" fill="#2F5233"/>
+          <rect x="40" y="36" width="16" height="18" fill="#2F5233"/>
+          <rect x="66" y="30" width="16" height="18" fill="#D9663F"/>
+          <rect x="92" y="36" width="16" height="18" fill="#F3DED4" stroke="#4B5750" stroke-width="1"/>
+          <rect x="118" y="36" width="8" height="18" fill="#F3DED4" stroke="#4B5750" stroke-width="1" stroke-dasharray="2,2"/>
         </svg>
       </div>
       <div class="case-body">
-        <p class="tag">Reporting system</p>
-        <h3>Annual memo-tracking system</h3>
-        <p>Directorate memos were tracked manually with no visibility into turnaround times or bottlenecks. <strong>Rebuilt the annual tracking workbook</strong> in Excel with dynamic summaries, KPI dashboards, and calculated turnaround-time columns.</p>
-        <p class="outcome">Now the directorate's standard system for the year, giving supervisors a live view of where memos stand rather than a static log.</p>
+        <p class="tag">Web application</p>
+        <h3>Memo Tracker — a live system for the desk-to-desk paper trail</h3>
+        <p>Directorate memos move through nine separate desks between submission and fund release, with no shared visibility into where any given one actually sat. <strong>Built a full-stack web application</strong> (React, TanStack Start, Supabase) that models that real journey end to end — flagging any memo stuck at a desk past a week, linking each memo's activities to its budget line, and using AI to read uploaded approval and release sheets and match them back to the right memo by cross-referencing vote codes, amounts, and wording.</p>
+        <p class="outcome">Rolled out with role-based access so each division and unit can follow up on its own memos directly, rather than everything funnelling through one central point.</p>
       </div>
     </div>
 
